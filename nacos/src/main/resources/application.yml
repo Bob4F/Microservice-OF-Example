@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: springcloud_config_example
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 47.92.86.79:8848
-        namespace: 8527532d-20d6-48e3-9b53-508003892f44

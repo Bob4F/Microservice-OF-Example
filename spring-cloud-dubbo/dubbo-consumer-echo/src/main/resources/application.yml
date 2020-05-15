@@ -1,0 +1,21 @@
+server:
+  port: 8088
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: echo-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+dubbo:
+  application:
+    name: dubbo-consumer-echo
+  registry:
+    address: nacos://127.0.0.1:8848
+    parameters[namespace]: 8527532d-20d6-48e3-9b53-508003892f44
+  scan:
+    basePackages: com.spring.cloud.dubbo
